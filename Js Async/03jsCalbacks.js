@@ -80,5 +80,3 @@
      is invoked after a delay (simulated by setTimeout), allowing other code (like "Asynchronous operation 
      started.") to execute in the meantime.".
   */
-
-
