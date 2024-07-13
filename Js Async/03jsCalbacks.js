@@ -80,3 +80,25 @@
      is invoked after a delay (simulated by setTimeout), allowing other code (like "Asynchronous operation 
      started.") to execute in the meantime.".
   */
+
+     // Another example
+   console.log("");
+   console.log("");
+   console.log("");
+   console.log("");
+     function display(text){
+        return text;
+       }
+   
+       function text(callback){
+           console.log("Fetching Data is starting.....");
+           setTimeout(function() {
+               callback();
+           }, 3000);
+           console.log("Data Fetching has started just wait....");
+       };
+   
+       function fetchData(){
+           console.log("Here is your data... => ", display("i love you"));
+       }
+       text(fetchData);
